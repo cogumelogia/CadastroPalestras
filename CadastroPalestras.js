@@ -8,7 +8,7 @@ console.log ("Informe primeiro a sua idade para começar o cadastro:");
 console.log (`${idade} anos`);
 
 if (idade >= 18){
-    console.log ("Seja bem vindo! Para iniciar o seu cadastro, informe: Você é -Palestrante- ou -Participante-?")
+    console.log ("Seja bem vindo! Para iniciar o seu cadastro, informe: Você é -Palestrante- ou -Participante-?");
     }else{
         console.log ("Muito obrigado! Porém, sua idade não é permitida na plataforma");
 }
@@ -21,7 +21,7 @@ let usuarioFuncao = tipoUsuario[1];
 if (usuarioFuncao == tipoUsuario[0]){
     console.log ("Sou Palestrante");
     console.log ("Escolha uma data para cadastrar sua palestra (modelo data MM/DD/AAAA):");
-    }else{ (usuarioFuncao == tipoUsuario[1])
+    }else{ (usuarioFuncao == tipoUsuario[1]);
         console.log ("Sou -Participante-");
         console.log ("Escolha uma data para a palestra que você gostaria de participar (modelo data MM/DD/AAAA):");
 }
@@ -35,7 +35,7 @@ let dataEscolhida = new Date ("11/04/2021");
 
 if (dataEscolhida > dataAtual){
     console.log (`${dataEscolhida.toLocaleDateString("en-US")}`); 
-    console.log ("Data escolhida! Veja abaixo a lista de palestras do dia escolhido:")
+    console.log ("Data escolhida! Veja abaixo a lista de palestras do dia escolhido:");
         }else{
             console.log ("Data inválida. Data inserida anterior à data atual. Escolha uma nova data");
 }
@@ -48,11 +48,11 @@ let palestrasCadastradas = [];
 
     while (palestrasCadastradas < 3){
         if (palestrasCadastradas == 0){
-            console.log (`1 - ${listaPalestras[0]}`)
+            console.log (`1 - ${listaPalestras[0]}`);
         }else if (palestrasCadastradas == 1){
-            console.log (`2 - ${listaPalestras [1]}`)
+            console.log (`2 - ${listaPalestras [1]}`);
         }else{
-            console.log (`3 - ${listaPalestras [2]}`)
+            console.log (`3 - ${listaPalestras [2]}`);
         }
         palestrasCadastradas++
     }
@@ -63,24 +63,24 @@ let numCadastradosPalestra1 = 100;
 let numCadastradosPalestra2 = 100;
 let numCadastradosPalestra3 = 80;
 
-let palestraEscolhida = numCadastradosPalestra3
+let palestraEscolhida = numCadastradosPalestra3;
 
 if (palestraEscolhida < 100){
-    console.log ("Você garantiu sua vaga! Termine a inscrição adicionando seu nome completo, e-Mail e telefone para contato.")
+    console.log ("Você garantiu sua vaga! Termine a inscrição adicionando seu nome completo, e-Mail e telefone para contato.");
     }else{
-        console.log ("Limite de participantes excedido para a palestra escolhida. Escolha outra palestra.")
+        console.log ("Limite de participantes excedido para a palestra escolhida. Escolha outra palestra.");
 }
 
-let dadosUsuario = ["Nome:", "João", "Sobrenome:", "Silva", "e-Mail:", "js2000@email.com.br", "Telefone:", "(99) 55555-5555"]
-let listaDados = dadosUsuario.length
-let dadosUsuario1 = dadosUsuario.join (' ') ///variável para tirar vírgula de uma array
+let dadosUsuario = ["Nome:", "João", "Sobrenome:", "Silva", "e-Mail:", "js2000@email.com.br", "Telefone:", "(99) 55555-5555"];
+let listaDados = dadosUsuario.length;
+let dadosUsuario1 = dadosUsuario.join (' '); ///variável para tirar vírgula de uma array
 
 if (listaDados < 8){
-    console.log ("Dados incompletos. Preencha todos os campos com seus dados")
+    console.log ("Dados incompletos. Preencha todos os campos com seus dados.");
     }else{
         console.log (`${dadosUsuario1}`)
-        console.log ("Participante cadastrado com sucesso! Marque a data da palestra escolhida em sua agenda.")
-        console.log ("30 minutos antes da palestra, iremos enviar um alerta em seu e-Mail cadastrado.")
+        console.log ("Participante cadastrado com sucesso! Marque a data da palestra escolhida em sua agenda.");
+        console.log ("30 minutos antes da palestra, iremos enviar um alerta em seu e-Mail cadastrado.");
 }
 
 ///Revendo meu fluxograma, acabei invertando algumas condições de 'if/else' para ficar melhor. 
